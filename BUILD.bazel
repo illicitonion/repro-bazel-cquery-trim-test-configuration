@@ -1,0 +1,17 @@
+load("@pip_parse//:requirements.bzl", "requirement")
+load("@rules_python//python:pip.bzl", "compile_pip_requirements")
+
+py_test(
+    name = "cowsay_test",
+    srcs = ["cowsay_test.py"],
+    deps = [
+        requirement("cowpy"),
+    ],
+)
+
+compile_pip_requirements(
+    name = "requirements",
+    extra_args = ["--allow-unsafe"],
+    requirements_in = "requirements.txt",
+    requirements_txt = "requirements_lock.txt",
+)
