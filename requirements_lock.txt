@@ -4,7 +4,6 @@
 #
 #    bazel run //:requirements.update
 #
-cowpy==1.1.5 \
-    --hash=sha256:089172db1d88c30a2e1b741b18945ee84170bd943a3ca71948e4ae3a3255e554 \
-    --hash=sha256:de5ae7646dd30b4936013666c6bd019af9cf411cc3b377c8538cfd8414262921
+cowpy==1.0 \
+    --hash=sha256:108ffbbdeb6bac139662760c4ef4a3e54bd5f112f58ff2d00f94d7d20b6a64c7
     # via -r requirements.txt
